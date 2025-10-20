@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Universitas Sains dan Teknologi Indonesia</title>
+    <meta name="description" content="Universitas Sains dan Teknologi Indonesia - Membentuk generasi unggul dalam sains dan teknologi untuk kemajuan bangsa">
+    
+    <!-- Redirect to public index.html -->
+    <meta http-equiv="refresh" content="0; url=public/index.html">
+    
+    <link rel="manifest" href="public/manifest.json">
+    
+    <link rel="icon" href="public/icon-usti.png" type="image/png">
+    
+    <link rel="stylesheet" href="public/styles.css">
+    
+    <meta name="theme-color" content="#003366">
+    <meta property="og:title" content="Universitas Sains dan Teknologi Indonesia">
+    <meta property="og:description" content="Membentuk generasi unggul dalam sains dan teknologi untuk kemajuan bangsa">
+    <meta property="og:image" content="public/icon-usti.png">
+    <meta property="og:url" content="https://usti.ac.id">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #003366, #0055AA);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        
+        .redirect-container {
+            max-width: 600px;
+            padding: 2rem;
+            background: rgba(0, 51, 102, 0.8);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1s ease-out;
+        }
+        
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 1.5rem;
+            animation: pulse 2s infinite;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #FFD700;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .redirect-link {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #003366;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+        
+        .redirect-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        @media (max-width: 768px) {
+            .redirect-container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="redirect-container">
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700">
+            <path d="M12 3L1 9l11 6 9-4.91V17h2V9M12 3v7.77l-9-4.91 9-5.86z"/>
+        </svg>
+        <h1>Universitas Sains dan Teknologi Indonesia</h1>
+        <p>Jika Anda tidak dialihkan secara otomatis, silakan klik tombol di bawah ini untuk mengakses situs web resmi USTI.</p>
+        <a href="public/index.html" class="redirect-link">Kunjungi Website USTI</a>
+        
+        <script>
+            // Redirect after 3 seconds if meta refresh doesn't work
+            setTimeout(function() {
+                window.location.href = "public/index.html";
+            }, 3000);
+        </script>
+    </div>
+</body>
+</html>
